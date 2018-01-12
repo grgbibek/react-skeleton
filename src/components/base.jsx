@@ -1,15 +1,25 @@
-var React = require('react');
+import React, {Component} from 'react'
+import {
+  BrowserRouter as Router,
+  Link,
+  Route
+}  from 'react-router-dom'
 
-class Base extends React.Component{
+export default class Base extends Component{
     render(){
         return(
-            <div>
-                <h1>Header</h1>
-                {this.props.children}
-                <h1>Footer</h1>
-            </div>
+          <ul>
+            <li><Link to="/">Base</Link></li>
+            <li><Link to="/page1">Page 1</Link></li>
+            <li><Link to="/page2">Page 2</Link></li>
+          </ul>
+          /*<div>
+            <Router>
+                <Route exact path="/" component={Base} />
+
+                <Route  path="/page1" component={Page1} />
+             </Router>
+          </div>*/
         )
     }
 }
-
-module.exports = Base;

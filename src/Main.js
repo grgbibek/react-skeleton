@@ -1,8 +1,22 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import  TestRouter  from './Routes.jsx'
+import App from './components/App.js'
 
-ReactDOM.render(<TestRouter />,document.getElementById('app'));
+
+ReactDOM.render(
+  <App/>,
+  document.getElementById('app')
+);
+
+/*
+ import  TestRouter  from './Routes.jsx'
+
+ ReactDOM.render(
+ <TestRouter />,
+ document.getElementById('app')
+ );
+ */
+
 
 
 /*
